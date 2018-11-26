@@ -1,0 +1,232 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #063672;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 95%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    font-size: .9em;
+    margin-bottom: 1.8em;
+    color: #FFFFFF;
+}
+
+h2,
+h3,
+a {
+    color: #FFFFFF;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.logo {
+    margin-left: 40%;
+}
+
+.logo img {
+    width: 20%;
+    padding-top: 1em;
+}
+
+.main-nav {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.logo a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+    
+.main-nav a {
+    font-size: .95em;
+    color: #063672;
+    text-transform: uppercase;
+    background-color: #9C824A;
+    box-shadow: 5px 5px 8px rgba(0 ,0, 0, .8);
+
+}
+
+.main-nav a:hover {
+    background-color: rgba(156, 130, 74, .5);
+    color: #FFFFFF;
+}
+
+nav ul li {
+    padding: .25em;
+}
+
+/*---- News Feed ----*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-feed {
+    width: 95%;
+    background-color: #EF0107;
+    border: 5px solid #DB0007;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin: 0 auto;
+}
+
+.news-feed img {
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 5%;
+    background-color: #EF0107;
+}
+
+.news-images {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.caption {
+    position: absolute;
+    top: 75%;
+    left: 2%;
+    font-size: 1.5em;
+}
+/*---- Main Columns ----*/
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+/*---- Presenting Sponsors ----*/
+
+.col h2 {
+    text-align: center;
+    background-color: #EF0107;
+    margin-top: 1em;
+    padding: 1px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 8px rgba(0 ,0, 0, .8);
+}
+
+.col p {
+    background-color: #EF0107;
+    padding: .5em;
+}
+
+.col ul {
+    background-color: rgb(4, 35, 73);
+}
+
+.col ul li img {
+    width: 7em;
+}
+
+/*---- Videos ----*/
+
+iframe {
+    width: 100%;
+    margin: .5em;
+    box-shadow: -5px -5px 8px rgb(115, 115, 115);
+}
+
+/*---- Footer ----*/
+
+footer p {
+    text-align: center;
+}
+
+.main-footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(4, 35, 73);
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*---Flexbox Styles --*/
+
+@media (min-width: 769px) {
+    
+    .main-header,
+    .main-nav {
+        display: flex;
+    }
+    
+    .main-header {
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .logo img {
+        width: 35%;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .main-nav a {
+        width: 8em;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 20%;
+        margin-left: 0;
+    }
+
+    
+}
